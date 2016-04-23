@@ -19,7 +19,7 @@ class BlogController extends BaseController {
             $last            = \App\Blog::lastPosts();
             //echo'<pre>';
             //dd($mostRecommended);
-            return View('blog::index',array('title'=>"Welcome ",'mostRecommended'=>$mostRecommended,'last'=>$last));
+            return View('blog.index',array('title'=>"Welcome ",'mostRecommended'=>$mostRecommended,'last'=>$last));
 	}
 
     public static function seoUrl($string) {
@@ -46,7 +46,7 @@ class BlogController extends BaseController {
             if($post == NULL){
                 App::abort(404);
             }
-            return View('blog::post',array('title'=>$post['title'],'post'=>$post));
+            return View('blog.post',array('title'=>$post['title'],'post'=>$post));
 	}
         
     /**
