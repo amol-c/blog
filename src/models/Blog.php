@@ -17,7 +17,7 @@ class Blog extends \Eloquent {
     
     // return url of blog post 
     function getUrl(){
-        return \Config::get('app.url') .'/blog/post/'. $this->id . '/' . \Serverfireteam\blog\BlogController::seoUrl($this->title);
+        return '/blog/post/'. $this->id . '/' . \Serverfireteam\blog\BlogController::seoUrl($this->title);
     }
     
     public static  function mostRecommended(){
