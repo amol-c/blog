@@ -1,6 +1,6 @@
-@extends('blog::master')
 
-@section('body')
+<!-- Add your own page layout -->
+
 <div class="container index">
 
     <div class="clearfix top">
@@ -56,8 +56,3 @@
       </div>
     </footer>
 
-
-        
-
-
-@stop

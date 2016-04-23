@@ -1,6 +1,6 @@
-@extends('blog::master')
 
-@section('body')
+<!-- Add your own page layout -->
+
 <div id="blog" class="">
     <!-- Top Navigation -->
     <div class="codrops-top clearfix">
@@ -101,4 +101,3 @@
      SyntaxHighlighter.all()
 </script>
 
-@stop
