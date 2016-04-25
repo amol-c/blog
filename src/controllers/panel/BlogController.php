@@ -45,11 +45,10 @@ class BlogController extends \Serverfireteam\Panel\CrudController {
             $file = $input['image'];
             $amazonController = new AmazonController();
             $imageURL = $amazonController->insertImage($file, 'uploaded', AmazonController::AMAZON_BLOG_BUCKET);
-            $this->edit->set('image', $imageURL); 
+            $this->edit->set('s3_image', $imageURL); 
         }
 
-        // $image = $this->edit->field('image')->getValue();
-        // dd($image);
+
         return $this->returnEditView();
     }
 }
