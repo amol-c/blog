@@ -16,7 +16,8 @@ class CreateBlogTable extends Migration {
                 {
                     $table->increments('id');
                     $table->string('title',256);
-                    $table->string('image',256);
+                    $table->string('image',256)->nullable();
+                    $table->string('s3_image');
                     $table->string('author',256);
                     $table->longText('content');
                     $table->bigInteger('socialPoint');
